@@ -13,22 +13,22 @@ export default () => (
           <Link to="/">Home</Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/blog/">Blog</Link>
+          <Link to="#">Blog</Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/red/">Red</Link>
+          <Link to="#">Red</Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/blue/">Blue</Link>
+          <Link to="#">Blue</Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/green/">Green</Link>
+          <Link to="#">Green</Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/pink/">Pink</Link>
+          <Link to="#">Pink</Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/purple/">Purple</Link>
+          <Link to="#">Purple</Link>
         </li>
       </ul>
     </nav>

@@ -26,6 +26,9 @@
   color: currentColor;
   text-align: center;
   padding: 14px 16px;
+}
+
+.navItem a {
   text-decoration: none;
 }
 
