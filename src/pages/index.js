@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet';
 import Hero from '../components/hero';
 import Layout from '../components/layout';
 import ArticlePreview from '../components/article-preview';
-import styles from '../theme/theme.module.css';
 
 class RootIndex extends React.Component {
   render() {
@@ -17,16 +16,18 @@ class RootIndex extends React.Component {
         <div>
           <Helmet title={siteTitle} />
           <Hero />
-          <div className={styles.previewWrapper}>
-            <ul className="article-list">
-              {colors.map(({ node }) => {
-                return (
-                  <li>
-                    <ArticlePreview article={node} />
-                  </li>
-                )
-              })}
-            </ul>
+          <div class='gradient50'>
+            <div class="cardWrapper">
+              {/* <ul className="article-list"> */}
+                {colors.map(({ node }) => {
+                  return (
+                    // <li>
+                      <ArticlePreview article={node} />
+                    // </li>
+                  )
+                })}
+              {/* </ul> */}
+            </div>
           </div>
         </div>
       </Layout>

@@ -1,3 +1,4 @@
+@import '../theme/theme.module.css';
 @font-face {
   font-family: "Avenir";
   font-weight: 400;
@@ -69,4 +70,15 @@ a {
 
 .list-inline li {
   display: inline-block;
+}
+
+.gradient50 {
+  background: linear-gradient(var(--backgroundColor1) 50%, var(--backgroundColor3) 50%);
+}
+
+.cardWrapper {
+  width: 100%;
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: center;
 }

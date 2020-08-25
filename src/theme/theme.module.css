@@ -3,9 +3,3 @@
     --backgroundColor2: rgb(68, 68, 68);
     --backgroundColor3: #fff;
 }
-
-.previewWrapper {
-    padding: 20px;
-    margin: 0 auto;
-    background: linear-gradient(var(--backgroundColor1) 50%, var(--backgroundColor3) 50%);
-}
