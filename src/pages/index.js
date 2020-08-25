@@ -40,7 +40,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allContentfulColorPanel {
+    allContentfulColorPanel(sort: {fields: color}) {
       edges {
         node {
           color
