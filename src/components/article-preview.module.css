@@ -19,9 +19,10 @@
   transition: 0.3s;
   padding: 5px;
   width: 300px;
+  background-color: var(--backgroundColor3);
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
 }

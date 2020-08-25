@@ -1,6 +1,6 @@
 .header {
   min-height: 80px;
-  background-color: #fff;
+  background-color: var(--backgroundColor3);
   display: flex;
   align-items: center;
   overflow: hidden;
