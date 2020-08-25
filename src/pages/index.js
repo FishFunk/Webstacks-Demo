@@ -4,7 +4,7 @@ import get from 'lodash/get';
 import { Helmet } from 'react-helmet';
 import Hero from '../components/hero';
 import Layout from '../components/layout';
-import ArticlePreview from '../components/article-preview';
+import ColorPanel from '../components/color-panel';
 
 class RootIndex extends React.Component {
   render() {
@@ -18,15 +18,11 @@ class RootIndex extends React.Component {
           <Hero />
           <div class='gradient50'>
             <div class="cardWrapper">
-              {/* <ul className="article-list"> */}
                 {colors.map(({ node }) => {
                   return (
-                    // <li>
-                      <ArticlePreview article={node} />
-                    // </li>
+                    <ColorPanel card={node} />
                   )
                 })}
-              {/* </ul> */}
             </div>
           </div>
         </div>
