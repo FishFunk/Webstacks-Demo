@@ -31,7 +31,7 @@
   word-wrap: normal;
   bottom: 0;
   font-size: 14px;
-  padding: 0 0.5em;
+  padding: 0 15% 5% 15%;
 }
 
 @media(min-width: 600px) {

@@ -8,14 +8,15 @@ import ColorPanel from '../components/color-panel';
 
 class RootIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const colors = get(this, 'props.data.allContentfulColorPanel.edges')
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const colors = get(this, 'props.data.allContentfulColorPanel.edges');
+    const heroData = get(this, 'props.data.contentfulHero');
 
     return (
       <Layout>
         <div>
           <Helmet title={siteTitle} />
-          <Hero />
+          <Hero data={heroData}/>
           <div class='gradient50'>
             <div class="cardWrapper">
                 {colors.map(({ node }) => {
@@ -55,6 +56,14 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    contentfulHero {
+      header
+      details
+      button {
+        link
+        title
       }
     }
   }
